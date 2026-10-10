@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+.env.*
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+# Dữ liệu giải nén (chỉ giữ bản .zip trong repo)
+Books.csv
+Ratings.csv
+Users.csv
+instance/
