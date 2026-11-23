@@ -6,7 +6,7 @@ Collaborative-Filtering-System là hệ thống **gợi ý sách bằng lọc c�
 ## Cấu trúc
 - `Model.py` — pipeline cosine-similarity: ghép dữ liệu, chỉ giữ người dùng có >200 đánh giá và sách có >=50 đánh giá, dựng pivot table, tự cài `cosine_similarity`; hàm `recommend(book_name)` trả các sách tương tự.
 - `Model2.py` — biến thể thứ hai của hệ gợi ý (có hàm `recommend(book_name)`), cài thêm các phép tính tự viết.
-- `web.py` — ứng dụng Flask: form tìm tên sách → gọi `Model.recommend` → hiển thị kết quả. **Cần `templates/index.html` nhưng file này không có trong repo.**
+- `web.py` — ứng dụng Flask: form tìm tên sách → gọi `Model.recommend` → hiển thị kết quả. Giao diện ở `templates/index.html` (form `search_query`, mỗi kết quả là `[tên sách, tác giả, URL ảnh]`).
 - `CodeKaggle.ipynb` — notebook khám phá dữ liệu + lọc cộng tác (dựa trên notebook Kaggle).
 - `codetay.ipynb` — thử nghiệm SVD (`surprise`), RMSE, top-10 gợi ý cho một người dùng mẫu.
 - `Books.csv.zip`, `Ratings.csv.zip`, `Users.csv.zip` — dữ liệu gốc (nén, ~25MB). Cần giải nén ra `Books.csv`, `Ratings.csv`, `Users.csv` trước khi chạy.
